@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Maps Fragment -->
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/search_layout"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp">
+
+    </fragment>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/search_layout"
+        android:background="@color/RoyalBlue"
+        android:orientation="horizontal">
+
+        <!-- EditText for Search your place -->
+
+        <EditText
+            android:id="@+id/search_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:hint="Busca un lugar" />
+
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/search"
+            android:onClick="onMapSearch"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
