@@ -1,6 +1,6 @@
 # Google-maps-sdk-android
 Implementación del SDK Google-Maps para Android
 
-This project use Google Maps API to locate yourself and search places.
+Este proyecto utiliza la API de Google Maps para localizarte y encontrar sitios
 
-	Remember change de API_KEY  
+	Recuerda cambiar el API KEY 
